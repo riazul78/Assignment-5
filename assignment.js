@@ -48,21 +48,20 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
 })
 //  total-budget-part
 document.getElementById('calculate-total-btn').addEventListener('click', function(){
-         const manager = document.getElementById('manager');
-         const managerValue =manager.value;
-         const perManagerCost = parseFloat(managerValue);
+    const manager = document.getElementById('manager');
+    const managerValue =manager.value;
+    const perManagerCost = parseFloat(managerValue);
 
-         const coach = document.getElementById('coach');
-         const coachValue =coach.value;
-         const perCoachCost = parseFloat(coachValue);
+    const coach = document.getElementById('coach');
+    const coachValue =coach.value;
+    const perCoachCost = parseFloat(coachValue);
 
-         const playerExpenses = document.getElementById('player-expenses');
-         const expensesValue = playerExpenses.innerText;
-         const convertExpensesToNumber = parseFloat(expensesValue);
+    const playerExpenses = document.getElementById('player-expenses');
+    const expensesValue = playerExpenses.innerText;
+    const convertExpensesToNumber = parseFloat(expensesValue);
 
-         const calculateTotal = convertExpensesToNumber + perManagerCost + perCoachCost;
-        //  console.log(calculateTotal);
+    const calculateTotal = convertExpensesToNumber + perManagerCost + perCoachCost;
 
-        const total = document.getElementById('total');
-        total.innerText = calculateTotal;
+   const total = document.getElementById('total');
+   total.innerText = calculateTotal;
 })
