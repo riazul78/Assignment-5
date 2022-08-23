@@ -20,6 +20,7 @@
   </head>
   <body>
     <header>
+      <!-- title-section -->
         <section id="section-A">
             <div class="text-center w-50 m-auto p-5">
                <h1 id="head-title" class="text-white">Select Your Best Five</h1>
@@ -28,8 +29,10 @@
         </section>
     </header>
     <main class="bg-dark">
+      <!-- cards section -->
         <section class="container">
             <div class="row row-cols-lg-3 row-cols-md-3 g-4">
+              <!-- first card -->
                 <div class="col-lg-3">
                   <div class="card h-100">
                     <img src="images/Image (2).png" class="card-img-top" alt="...">
@@ -40,6 +43,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- second card -->
                 <div class="col-lg-3">
                     <div class="card h-100">
                       <img src="images/player-b.jfif" class="card-img-top" alt="...">
@@ -50,6 +54,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- third card -->
                   <div class="col-lg-3">
                     <div class="card h-100">
                       <img src="images/player-c.jfif" class="card-img-top" alt="...">
@@ -60,6 +65,7 @@
                       </div>
                     </div>
                   </div>
+              <!--fourth card / select-players -->
                   <div class="col-lg-2">
                     <div class="card h-100 bg-black text-white">
                       <h2 class="text-center mt-lg-3">Select-V</h2>
@@ -68,6 +74,7 @@
                       </ol>
                     </div>
                   </div>
+                <!-- fifth card -->
                 <div class="col-lg-3">
                   <div class="card h-75">
                     <img src="images/Image (1).png" class="card-img-top" alt="...">
@@ -78,6 +85,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- sixth card -->
                 <div class="col-lg-3">
                   <div class="card h-75">
                     <img src="images/Image (2).jpg" class="card-img-top" alt="...">
@@ -88,6 +96,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- seventh card -->
                 <div class="col-lg-3">
                   <div class="card h-75 ">
                     <img src="images/player-f.jfif" class="card-img-top " alt="...">
@@ -98,9 +107,11 @@
                     </div>
                   </div>
                 </div>
+                <!-- total calculation part here -->
                 <div class="col-lg-3">
                   <div class="card h-100 bg-black text-white">
                     <h2 class="text-center my-3">Budget</h2>
+                    <!-- per player calculation -->
                     <div class="fw-light px-3 text-center">
                       <p class="d-inline pe-3">Per Player</p> 
                       <input id="per-player" class="w-50 bg-black border mb-3 text-white" type="text">
@@ -108,6 +119,7 @@
                     </div>
                     <div class="fw-light mt-3 text-center">
                       <p class="d-inline pe-5">Player Expenses</p>
+                      <!-- total calculation -->
                       <h6 class="d-inline">$<span id="player-expenses">0</span></h6>
                     </div>
                     <div class="text-center mt-3">
@@ -121,7 +133,7 @@
                     </div>
                     <div class="d-flex justify-content-between mt-3 px-4">
                       <p>Total</p>
-                      <h6 id="total" class="text-warning">$<span>0</span></h6>
+                      <h6 class="text-warning">$<span id="total">0</span></h6>
                     </div>
                     </div>
                   </div>
