@@ -1,17 +1,14 @@
 const playersArr =[];
-function display(){
+function display(playersHere){
     const playersList = document.getElementById('players-list');
     playersList.innerHTML = "";
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < playersHere.length; i++){
            
              const allPlayers = playersArr[i].playerName;
 
-             const tr =document.createElement('tr');
-             tr.innerHTML = `
-             <td>${i + 1}</td>
-             <td>${allPlayers}</td>
-             `
-             playersList.appendChild(tr);
+             const li =document.createElement('li');
+             li.innerText = allPlayers;
+             playersList.appendChild(li);
     }
 
 }
